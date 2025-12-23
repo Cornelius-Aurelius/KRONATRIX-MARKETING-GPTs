@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>KRONATRIX™ | Industry-Specific Marketing GPTs</title>
+  <title>KRONATRIX™ Marketing GPTs</title>
 
-  <meta name="description" content="KRONATRIX™ provides industry-specific AI marketing GPTs that help professionals get more clients, visibility, and sales — in plain English." />
+  <meta name="description" content="Industry-specific AI marketing GPTs that tell you exactly what to post, what to say, and what to fix — so you get more clients without overwhelm." />
 
   <style>
     :root {
@@ -27,28 +27,38 @@
     }
 
     header {
-      padding: 60px 20px 30px;
+      padding: 80px 20px 50px;
       text-align: center;
     }
 
     header h1 {
-      font-size: clamp(2.1rem, 4vw, 2.8rem);
-      margin-bottom: 12px;
+      font-size: clamp(2.4rem, 4vw, 3.2rem);
+      margin-bottom: 14px;
     }
 
     header p {
       max-width: 960px;
       margin: 0 auto;
-      color: var(--muted);
-      font-size: 1.1rem;
+      font-size: 1.15rem;
       line-height: 1.6;
+      color: var(--muted);
+    }
+
+    .hero-points {
+      max-width: 820px;
+      margin: 30px auto 0;
+      display: grid;
+      gap: 8px;
+      text-align: left;
+      font-size: 1.05rem;
+      color: var(--muted);
     }
 
     .links {
-      margin-top: 22px;
+      margin-top: 28px;
       display: flex;
       justify-content: center;
-      gap: 18px;
+      gap: 20px;
       flex-wrap: wrap;
     }
 
@@ -58,27 +68,9 @@
       font-weight: 600;
     }
 
-    .info {
-      max-width: 980px;
-      margin: 0 auto;
-      padding: 20px;
-      text-align: center;
-    }
-
-    .info h2 {
-      font-size: clamp(1.6rem, 3vw, 2rem);
-      margin-bottom: 10px;
-    }
-
-    .info p {
-      color: var(--muted);
-      font-size: 1.05rem;
-      line-height: 1.6;
-    }
-
     .search-wrap {
       max-width: 620px;
-      margin: 30px auto 0;
+      margin: 20px auto 0;
       padding: 0 20px;
     }
 
@@ -93,36 +85,31 @@
       outline: none;
     }
 
-    .search-wrap input::placeholder {
-      color: #6b7280;
-    }
-
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 26px;
-      padding: 40px 20px 70px;
+      gap: 28px;
+      padding: 50px 20px 80px;
       max-width: 1500px;
       margin: auto;
     }
 
     .card {
       background: var(--card);
-      border-radius: 16px;
+      border-radius: 18px;
       padding: 18px;
       text-align: center;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
     }
 
     .card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 20px 45px rgba(0,0,0,0.45);
+      transform: translateY(-8px);
+      box-shadow: 0 25px 55px rgba(0,0,0,0.5);
     }
 
     .card img {
       width: 100%;
-      height: auto;
-      border-radius: 12px;
+      border-radius: 14px;
       margin-bottom: 14px;
     }
 
@@ -137,7 +124,7 @@
     footer {
       border-top: 1px solid var(--border);
       text-align: center;
-      padding: 45px 20px;
+      padding: 50px 20px;
       color: var(--muted);
       font-size: 0.9rem;
       line-height: 1.65;
@@ -156,9 +143,19 @@
 <header>
   <h1>KRONATRIX™ Marketing GPTs</h1>
   <p>
-    Industry-specific AI marketing systems that tell you exactly what to post,
-    what to say, and what to fix — so you get more clients without confusion or overwhelm.
+    Industry-specific AI marketing systems built for one purpose:
+    <strong style="color:#ffffff;">to help you get more clients.</strong>
+    <br><br>
+    Pick your industry and KRONATRIX™ tells you exactly what to post,
+    what to say, and what to fix — in plain English.
   </p>
+
+  <div class="hero-points">
+    <span>✔ Pick your industry</span>
+    <span>✔ Ask questions about your business</span>
+    <span>✔ Get clear actions that increase visibility & sales</span>
+    <span>✔ No jargon. No fluff. Just results.</span>
+  </div>
 
   <div class="links">
     <a href="https://corneliusaurelius.com/" target="_blank">🌐 Main Website</a>
@@ -166,74 +163,72 @@
   </div>
 </header>
 
-<section class="info">
-  <h2>How It Works</h2>
-  <p>
-    Choose your industry. Ask questions about your business.
-    KRONATRIX™ gives you clear marketing actions, content ideas,
-    and visibility fixes — in plain English.
-  </p>
-
-  <h2 style="margin-top:30px;">Why It Works</h2>
-  <p>
-    Each GPT is designed for one specific profession and customer mindset.
-    No generic advice. Just focused guidance that turns attention into customers.
-  </p>
-</section>
-
 <div class="search-wrap">
-  <input
-    type="text"
-    id="searchInput"
-    placeholder="Search your industry (plumber, fitness, electrician...)"
-    onkeyup="filterCards()"
-  />
+  <input type="text" id="searchInput" placeholder="Search your industry (plumber, fitness, electrician…)" onkeyup="filterCards()" />
 </div>
 
 <section class="grid" id="gptGrid">
 
-  <!-- 🔹 ALL 25 GPT CARDS -->
+  <!-- ALL 25 GPT CARDS -->
 
-  <!-- Example shown – pattern repeated for all -->
-  <!-- Cards are searchable via inner text -->
+  <div class="card"><a href="https://chatgpt.com/g/g-6933d8d91f848191b0c2d73bd4e7ce17-personal-trainer-marketing-by-kronatrixtm" target="_blank"><img src="🔥 Personal Trainer Marketing by KRONATRIX™ logo.png">🔥 Personal Trainer Marketing by KRONATRIX™</a></div>
 
-  <!-- 🔥 Builder -->
-  <div class="card">
-    <a href="https://chatgpt.com/g/g-6933d4a472848191969bcdfe4eb7e715-builder-marketing-by-kronatrixtm" target="_blank">
-      <img src="🔥 Builder Marketing by KRONATRIX™ logo.png">
-      🔥 Builder Marketing by KRONATRIX™
-    </a>
-  </div>
+  <div class="card"><a href="https://chatgpt.com/g/g-6933d9e0279c81918eea8121297c3ee7-real-estate-marketing-by-kronatrixtm" target="_blank"><img src="🔥 Real Estate Marketing by KRONATRIX™ logo.png">🔥 Real Estate Marketing by KRONATRIX™</a></div>
 
-  <!-- 🔥 Plumber -->
-  <div class="card">
-    <a href="https://chatgpt.com/g/g-6933d155818081919c34e5a21c7da68c-plumber-marketing-by-kronatrixtm" target="_blank">
-      <img src="🔥 Plumber Marketing by KRONATRIX™ logo.png">
-      🔥 Plumber Marketing by KRONATRIX™
-    </a>
-  </div>
+  <div class="card"><a href="https://chatgpt.com/g/g-6934421c9b0481919be621a7b0d07dd1-dog-groomer-marketing-by-kronatrixtm" target="_blank"><img src="Dog Groomer Marketing by KRONATRIX™ neon logo.png">Dog Groomer Marketing by KRONATRIX™</a></div>
 
-  <!-- 🔥 Cleaning -->
-  <div class="card">
-    <a href="https://chatgpt.com/g/g-6933d725bd008191bdfc77380f7f185c-cleaning-marketing-by-kronatrixtm" target="_blank">
-      <img src="🔥 Cleaning Marketing by KRONATRIX™ logo.png">
-      🔥 Cleaning Marketing by KRONATRIX™
-    </a>
-  </div>
+  <div class="card"><a href="https://chatgpt.com/g/g-69344290821081919c5300689e7da862-mobile-car-valeting-marketing-by-kronatrixtm" target="_blank"><img src="Mobile Car Valeting Marketing by KRONATRIX™ neon logo.png">Mobile Car Valeting Marketing by KRONATRIX™</a></div>
 
-  <!-- Repeat pattern for remaining 22 GPTs (already mapped earlier) -->
+  <div class="card"><a href="https://chatgpt.com/g/g-69340789005081919840b1cf8a2134d7-chiropractor-marketing-by-kronatrixtm" target="_blank"><img src="Chiropractor Marketing by KRONATRIX™ logo.png">Chiropractor Marketing by KRONATRIX™</a></div>
+
+  <div class="card"><a href="https://chatgpt.com/g/g-69340733fbc88191b34b7eedb8e64ca2-dentist-marketing-by-kronatrixtm" target="_blank"><img src="Dentist Marketing by KRONATRIX™ logo.png">Dentist Marketing by KRONATRIX™</a></div>
+
+  <div class="card"><a href="https://chatgpt.com/g/g-6933d333bc2081919943e269a4259c68-electrician-marketing-by-kronatrixtm" target="_blank"><img src="Electrician Marketing logo.png">Electrician Marketing</a></div>
+
+  <div class="card"><a href="https://chatgpt.com/g/g-6934076ad54c8191a7db8d541e1a3cae-cafe-coffee-shop-marketing-by-kronatrixtm" target="_blank"><img src="Café & Coffee Shop Marketing by KRONATRIX™ logo.png">Café & Coffee Shop Marketing by KRONATRIX™</a></div>
+
+  <div class="card"><a href="https://chatgpt.com/g/g-6934077a1ec08191bf45f717a9e64127-photographer-marketing-by-kronatrixtm" target="_blank"><img src="Photographer Marketing by KRONATRIX™ logo.png">Photographer Marketing by KRONATRIX™</a></div>
+
+  <div class="card"><a href="https://chatgpt.com/g/g-6934424fc1b881918ddb8db9c8a887b4-roof-cleaning-pressure-washing-marketing-kronatrix" target="_blank"><img src="Roof Cleaning & Pressure Washing Marketing by KRONATRIX™ neon logo.png">Roof Cleaning & Pressure Washing Marketing by KRONATRIX™</a></div>
+
+  <div class="card"><a href="https://chatgpt.com/g/g-693407824d9c8191b5839d692b05d0f3-accountant-marketing-by-kronatrixtm" target="_blank"><img src="Accountant Marketing logo by KRONATRIX™.png">Accountant Marketing by KRONATRIX™</a></div>
+
+  <div class="card"><a href="https://chatgpt.com/g/g-69344231cf248191a6f63e23fc71e340-real-estate-photographer-marketing-by-kronatrixtm" target="_blank"><img src="🔥 Real Estate Photographer Marketing by KRONATRIX™ logo.png">🔥 Real Estate Photographer Marketing by KRONATRIX™</a></div>
+
+  <div class="card"><a href="https://chatgpt.com/g/g-693441d523b481919d235ec292644a01-window-cleaner-marketing-by-kronatrixtm" target="_blank"><img src="Window Cleaner Marketing by KRONATRIX™ logo.png">Window Cleaner Marketing by KRONATRIX™</a></div>
+
+  <div class="card"><a href="https://chatgpt.com/g/g-693443caab808191be585d17796c40bd-electrician-ev-installer-marketing-by-kronatrixtm" target="_blank"><img src="Electrician & EV Installer Marketing by KRONATRIX™ neon logo.png">Electrician & EV Installer Marketing by KRONATRIX™</a></div>
+
+  <div class="card"><a href="https://chatgpt.com/g/g-6934429f7740819185aecbee82d53d78-landlord-property-management-marketing-kronatrix" target="_blank"><img src="Landlord & Property Management Marketing by KRONATRIX™ logo.png">Landlord & Property Management Marketing by KRONATRIX™</a></div>
+
+  <div class="card"><a href="https://chatgpt.com/g/g-69340772498881919e84807af204fb96-gym-fitness-studio-marketing-by-kronatrixtm" target="_blank"><img src="Gym & Fitness Studio Marketing by KRONATRIX™ logo.png">Gym & Fitness Studio Marketing by KRONATRIX™</a></div>
+
+  <div class="card"><a href="https://chatgpt.com/g/g-69344200da948191895e08791ba54785-painter-decorator-marketing-by-kronatrixtm" target="_blank"><img src="Painter & Decorator Marketing by KRONATRIX™ logo.png">Painter & Decorator Marketing by KRONATRIX™</a></div>
+
+  <div class="card"><a href="https://chatgpt.com/g/g-69340740f69481918ace99123cbb2efe-roofer-marketing-by-kronatrixtm" target="_blank"><img src="Roofer Marketing by KRONATRIX™ logo.png">Roofer Marketing by KRONATRIX™</a></div>
+
+  <div class="card"><a href="https://chatgpt.com/g/g-6933d5e129488191b44b06bb9cce8542-restaurant-marketing-by-kronatrixtm" target="_blank"><img src="🔥 Restaurant Marketing by KRONATRIX™ logo.png">🔥 Restaurant Marketing by KRONATRIX™</a></div>
+
+  <div class="card"><a href="https://chatgpt.com/g/g-6934075d377081918dee6a293a586f12-locksmith-marketing-by-kronatrixtm" target="_blank"><img src="Locksmith Marketing by KRONATRIX™ logo.png">Locksmith Marketing by KRONATRIX™</a></div>
+
+  <div class="card"><a href="https://chatgpt.com/g/g-6933d155818081919c34e5a21c7da68c-plumber-marketing-by-kronatrixtm" target="_blank"><img src="🔥 Plumber Marketing by KRONATRIX™ logo.png">🔥 Plumber Marketing by KRONATRIX™</a></div>
+
+  <div class="card"><a href="https://chatgpt.com/g/g-6933d725bd008191bdfc77380f7f185c-cleaning-marketing-by-kronatrixtm" target="_blank"><img src="🔥 Cleaning Marketing by KRONATRIX™ logo.png">🔥 Cleaning Marketing by KRONATRIX™</a></div>
+
+  <div class="card"><a href="https://chatgpt.com/g/g-6933d4a472848191969bcdfe4eb7e715-builder-marketing-by-kronatrixtm" target="_blank"><img src="🔥 Builder Marketing by KRONATRIX™ logo.png">🔥 Builder Marketing by KRONATRIX™</a></div>
+
+  <div class="card"><a href="https://chatgpt.com/g/g-693407556ca08191be1436f22f527895-landscaper-gardener-marketing-by-kronatrixtm" target="_blank"><img src="Landscaper & Gardener Marketing by KRONATRIX™ logo.png">Landscaper & Gardener Marketing by KRONATRIX™</a></div>
+
+  <div class="card"><a href="https://chatgpt.com/g/g-6934420f90648191813bc8323ddf7b6d-car-mechanic-garage-marketing-by-kronatrixtm" target="_blank"><img src="Car Mechanic & Garage Marketing by KRONATRIX™ logo.png">Car Mechanic & Garage Marketing by KRONATRIX™</a></div>
 
 </section>
 
 <footer>
-  Omniscientrix–vΩ Research Division<br>
-  Author: Cornelius Aurelius<br>
   Email: 138licensing@gmail.com<br>
   Website:
   <a href="https://corneliusaurelius.com/" target="_blank">corneliusaurelius.com</a><br>
   LinkedIn:
   <a href="https://www.linkedin.com/in/cornelius-aurelius-404805325/recent-activity/all/" target="_blank">Cornelius Aurelius</a><br><br>
-  Legal: Omniscientrix–vΩ Legal Protection Charter and Addendum (v2.1) © 2025 Cornelius Aurelius
 </footer>
 
 <script>
